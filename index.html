@@ -11,9 +11,38 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Icons</title>
 </head>
-<body>
-    
+<body class="bg-secondary bg-opacity-25">
+    <header class="fw-bold">
+        <nav class="bg-white">
+            <div class="container container-fluid">
+                <h1 class="text-info mb-0">FontIcons</h1>
+            </div>
+        </nav>
+        <nav class="bg-info">
+            <div class="container container-fluid d-flex justify-content-center align-items-center gap-3 py-3">
+                <p class="text-white text-uppercase m-0">filtra per tipo</p>
+                <select name="icon_type" id="">
+                    <option value="all">all</option>
+                    <option value="animal">animal</option>
+                    <option value="vegetable">vegetable</option>
+                    <option value="user">user</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container py-4" id="card-container">
+            <div class="row row-cols-5 gy-3">
+                <div class="col">
+                    <div class="card card_style">
+                        <i class="fa-solid fa-hippo"></i>
+                        <h5>Hippo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 </html>

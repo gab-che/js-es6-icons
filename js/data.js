@@ -1,4 +1,4 @@
-[
+const iconArray = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,5 @@
 		color: 'blue'
 	}
 ];
+
+// export {iconArray};
