@@ -1,5 +1,7 @@
 // import  {iconArray}  from "./data.js";
 const row = document.querySelector(".row");
+const select = document.getElementById("select");
+const selectType = document.createElement("select");
 
 iconArray.forEach((element)=>{
     Object.keys(element).forEach(()=>{element.family = "solid";});
@@ -15,3 +17,11 @@ iconArray.forEach((element)=>{
     
     row.append(col);
 })
+
+const typesList = iconArray.reduce((p, c) =>{
+    p[c.type] = p[c.type] || [];
+    p[c.type].push(c);
+    return p;
+}, []);
+
+//select.append(selectType);
